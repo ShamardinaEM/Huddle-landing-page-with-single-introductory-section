@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: white;
+}
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body {
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    background:
+        url(../images/bg-desktop.svg) no-repeat,
+        hsl(257, 40%, 49%);
+    background-size: cover;
+}
+header img {
+    padding: 2em;
+}
+main {
+    margin: auto;
+    display: flex;
+    gap: 2em;
+    width: 60%;
+}
+h1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+.wrapper {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    padding: 2em;
+}
+.register-btn {
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    width: 13em;
+    border-radius: 30px;
+    padding: 1em;
+    border: transparent;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 1px hsl(257deg 48.31% 23.76%);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.links {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 3em;
+    right: 3em;
+}
+span i {
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+span i:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+@media (max-width: 500px) {
+    main img {
+        width: 100%;
+    }
+    main {
+        gap: 0px;
+        flex-direction: column;
+        width: 90%;
+    }
+    .wrapper {
+        text-align: center;
+        align-items: center;
+    }
+    .links {
+        position: static;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
